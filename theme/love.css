@@ -1,11 +1,6 @@
-* {
+/* * {
     box-sizing: border-box;
-}
-
-h1 {
-    font-family: arial;
-    color: rgb( 11, 86, 117 );
-}
+} */
 
 body {
     background-image: url(bg.png);
@@ -42,6 +37,8 @@ a:hover {
 
 /* the canvas *must not* have any border or padding, or mouse coords will be wrong */
 #canvas {
+    height: 100%;
+    width: 100%;
     padding-right: 0;
     display: block;
     border: 0px none;
