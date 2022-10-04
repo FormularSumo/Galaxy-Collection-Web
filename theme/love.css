@@ -1,7 +1,3 @@
-/* * {
-    box-sizing: border-box;
-} */
-
 body {
     background-image: url(bg.png);
     background-repeat: no-repeat;
@@ -10,6 +6,10 @@ body {
     padding: none;
     background-color: rgb( 154, 205, 237 );
     color: rgb( 28, 78, 104 );
+}
+
+button {
+    font-size: 20px
 }
 
 footer {
@@ -37,10 +37,8 @@ a:hover {
 
 /* the canvas *must not* have any border or padding, or mouse coords will be wrong */
 #canvas {
-    height: 100%;
-    width: 100%;
-    padding-right: 0;
-    display: block;
-    border: 0px none;
+    padding: 0;
+    display: inline;
+    border: 0px;
     visibility: hidden;
 }
