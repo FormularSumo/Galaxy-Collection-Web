@@ -1,5 +1,5 @@
 body {
-    background-image: url(bg.png);
+    /* background-image: url(bg.png); */
     background-repeat: no-repeat;
     font-family: arial;
     margin: 0;
@@ -19,26 +19,4 @@ footer {
     position:absolute;
     bottom: 0;
     width: 100%;
-}
-
-/* Links */
-a {
-    text-decoration: none;
-}
-a:link {
-    color: rgb( 233, 73, 154 );
-}
-a:visited {
-    color: rgb( 110, 30, 71 );
-}
-a:hover {
-    color: rgb( 252, 207, 230 );
-}
-
-/* the canvas *must not* have any border or padding, or mouse coords will be wrong */
-#canvas {
-    padding: 0;
-    display: inline;
-    border: 0px;
-    visibility: hidden;
 }
