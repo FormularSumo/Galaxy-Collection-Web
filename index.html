@@ -54,6 +54,8 @@
                 canvas.webkitRequestFullScreen();
             else if(canvas.mozRequestFullScreen)
                 canvas.mozRequestFullScreen();
+            else if(canvas.webkitEnterFullscreen)
+                canvas.webkitEnterFullscreen();
       }
       function FullScreenHook(){
         var canvas = document.getElementById("canvas");
