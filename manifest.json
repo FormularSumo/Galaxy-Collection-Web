@@ -4,11 +4,15 @@
   "icons": [
     {
       "src": "Game.ico",
-      "sizes": "128x128",
-      "type": "image/ico"
+      "sizes": "16x16 32x32 48x48 64x64 128x128 256x256"
     }
   ],
+  "background_color" : "black",
   "start_url": "index.html",
   "display": "fullscreen",
-  "orientation": "landscape"
+  "orientation": "landscape",
+  "related_applications": [{
+    "platform": "play",
+    "url": "https://play.google.com/store/apps/details?id=com.formularsumo.starwarsforcecollectionremake.embed"
+  }]
 }
