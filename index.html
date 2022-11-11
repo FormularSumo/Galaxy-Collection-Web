@@ -141,10 +141,15 @@
     </script>
     <script type="text/javascript" src="game.js"></script>
     <script async type="text/javascript" src="love.js" onload="applicationLoad(this)"></script>
+
     <footer>
-      if (navigator.userAgent.indexOf("iPhone") != -1) {
-        <p><button onclick="goFullScreen();">Go Fullscreen</button></p>
-      }
+    <p><button id="fullscreen toggle" onclick="goFullScreen();" >Go Fullscreen</button> </p>
     </footer>
+
+    <script>
+      if (navigator.userAgent.indexOf("iPhone") != -1) {
+        document.getElementById("fullscreen toggle").style.display = 'none';
+      } 
+    </script>
   </body>
 </html>
