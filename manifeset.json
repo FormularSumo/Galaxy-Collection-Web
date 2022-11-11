@@ -1,0 +1,14 @@
+{
+    "short_name": "GC",
+    "name": "Galaxy Collection",
+    "icons": [
+      {
+        "src": "Game.ico",
+        "sizes": "128x128",
+        "type": "image/ico"
+      }
+    ],
+    "start_url": "/index.html",
+    "display": "fullscreen",
+    "orientation": "landscape"
+  }
