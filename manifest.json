@@ -39,6 +39,42 @@
       "sizes": "192x192"
     }
   ],
+  "screenshots": [
+    {
+      "src": "Main Menu.png",
+      "sizes": "1920x1080",
+      "type": "image/png",
+      "label": "Main Menu"
+    },{
+      "src": "Campaign.png",
+      "sizes": "1920x1080",
+      "type": "image/png",
+      "label": "Campaign"
+    },{
+      "src": "Campaign 2.png",
+      "sizes": "1920x1080",
+      "type": "image/png",
+      "label": "Campaign 2"
+    },{
+      "src": "Main Menu.png",
+      "sizes": "1920x1080",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Main Menu wide"
+    },{
+      "src": "Campaign.png",
+      "sizes": "1920x1080",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Campaign wide"
+    },{
+      "src": "Campaign 2.png",
+      "sizes": "1920x1080",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Campaign 2 wide"
+    }
+  ],
   "background_color" : "black",
   "theme_color": "black",
   "start_url": "index.html",
