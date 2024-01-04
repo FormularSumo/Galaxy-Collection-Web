@@ -3,7 +3,7 @@
   "name": "Galaxy Collection",
   "icons": [
     {
-      "src": "maskable-icon-adptive.svg",
+      "src": "maskable-icon-adaptive.svg",
       "type": "image/svg+xml",
       "purpose": "maskable monochrome",
       "sizes": "512x512"
