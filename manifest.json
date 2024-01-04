@@ -3,8 +3,40 @@
   "name": "Galaxy Collection",
   "icons": [
     {
-      "src": "Game.ico",
-      "sizes": "16x16 32x32 48x48 64x64 128x128 256x256"
+      "src": "maskable-icon-adptive.svg",
+      "type": "image/svg+xml",
+      "purpose": "maskable monochrome",
+      "sizes": "512x512"
+    },
+    {
+      "src": "maskable-icon-512.png",
+      "type": "image/png",
+      "purpose": "maskable monochrome",
+      "sizes": "512x512"
+    },
+    {
+      "src": "maskable-icon-192.png",
+      "purpose": "maskable monochrome",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "icon-adaptive.svg",
+      "type": "image/svg+xml",
+      "purpose": "any monochrome",
+      "sizes": "512x512"
+    },
+    {
+      "src": "icon-512.png",
+      "type": "image/png",
+      "purpose": "any monochrome",
+      "sizes": "512x512"
+    },
+    {
+      "src": "icon-192.png",
+      "purpose": "any monochrome",
+      "type": "image/png",
+      "sizes": "192x192"
     }
   ],
   "background_color" : "black",
