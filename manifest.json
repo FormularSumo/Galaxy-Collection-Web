@@ -5,36 +5,36 @@
     {
       "src": "maskable-icon-adaptive.svg",
       "type": "image/svg+xml",
-      "purpose": "maskable monochrome",
+      "purpose": "maskable",
       "sizes": "512x512"
     },
     {
       "src": "maskable-icon-512.png",
       "type": "image/png",
-      "purpose": "maskable monochrome",
+      "purpose": "maskable",
       "sizes": "512x512"
     },
     {
       "src": "maskable-icon-192.png",
-      "purpose": "maskable monochrome",
+      "purpose": "maskable",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
       "src": "icon-adaptive.svg",
       "type": "image/svg+xml",
-      "purpose": "any monochrome",
+      "purpose": "any",
       "sizes": "512x512"
     },
     {
       "src": "icon-512.png",
       "type": "image/png",
-      "purpose": "any monochrome",
+      "purpose": "any",
       "sizes": "512x512"
     },
     {
       "src": "icon-192.png",
-      "purpose": "any monochrome",
+      "purpose": "any",
       "type": "image/png",
       "sizes": "192x192"
     }
