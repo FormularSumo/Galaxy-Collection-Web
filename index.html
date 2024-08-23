@@ -156,5 +156,17 @@
         navigator.serviceWorker.register('/Star-Wars-Galaxy-Collection-Web/sw.js', { scope: '/Star-Wars-Galaxy-Collection-Web/' });
       }
     </script> -->
+
+    <script>
+    if (navigator.storage && navigator.storage.persist) {
+      navigator.storage.persist().then((persistent) => {
+        if (persistent) {
+          console.log("Storage will not be cleared except by explicit user action");
+        } else {
+          console.log("Storage may be cleared by the UA under storage pressure.");
+        }
+      });
+    }
+  </script>
   </body>
 </html>
