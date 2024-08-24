@@ -141,9 +141,25 @@
     <script type="text/javascript" src="game.js"></script>
     <script async type="text/javascript" src="love.js" onload="applicationLoad(this)"></script>
 
-    <footer>
-    <p><button id="fullscreen toggle" onclick="FullScreenHook(); goFullScreen();" >Go Fullscreen</button> </p>
-    </footer>
+    <script>
+      function resizeCanvas() {
+        const canvas = document.getElementById('canvas');
+        const loadingCanvas = document.getElementById('loadingCanvas');
+        const width = canvas.clientWidth;
+        const height = canvas.clientHeight;
+
+        if (canvas.width !== width || canvas.height !== height) {
+            canvas.width = width;
+            canvas.height = height;
+        }
+        if (loadingCanvas.width !== width || loadingCanvas.height !== height) {
+            loadingCanvas.width = width;
+            loadingCanvas.height = height;
+        }
+      }
+      resizeCanvas();
+      window.addEventListener('resize', resizeCanvas);
+    </script>
 
     <script>
       if (navigator.userAgent.indexOf("iPhone") != -1) {
@@ -168,5 +184,9 @@
       });
     }
   </script>
+
+  <footer>
+    <p><button id="fullscreen toggle" onclick="FullScreenHook(); goFullScreen();" >Go Fullscreen</button> </p>
+  </footer>
   </body>
 </html>
