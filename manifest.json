@@ -9,14 +9,14 @@
       "sizes": "512x512"
     },
     {
-      "src": "maskable-icon-512.png",
-      "type": "image/png",
+      "src": "maskable-icon-512.webp",
+      "type": "image/webp",
       "purpose": "maskable",
       "sizes": "512x512"
     },
     {
-      "src": "maskable-icon-192.png",
-      "type": "image/png",
+      "src": "maskable-icon-192.webp",
+      "type": "image/webp",
       "purpose": "maskable",
       "sizes": "192x192"
     },
@@ -27,74 +27,74 @@
       "sizes": "512x512"
     },
     {
-      "src": "icon-512.png",
-      "type": "image/png",
+      "src": "icon-512.webp",
+      "type": "image/webp",
       "purpose": "any",
       "sizes": "512x512"
     },
     {
-      "src": "icon-192.png",
-      "type": "image/png",
+      "src": "icon-192.webp",
+      "type": "image/webp",
       "purpose": "any",
       "sizes": "192x192"
     },
     {
-      "src": "maskable-monochrome-icon-512.png",
-      "type": "image/png",
+      "src": "maskable-monochrome-icon-512.webp",
+      "type": "image/webp",
       "purpose": "maskable monochrome",
       "sizes": "512x512"
     },
     {
-      "src": "maskable-monochrome-icon-192.png",
-      "type": "image/png",
+      "src": "maskable-monochrome-icon-192.webp",
+      "type": "image/webp",
       "purpose": "maskable monochrome",
       "sizes": "192x192"
     },
     {
-      "src": "monochrome-icon-512.png",
-      "type": "image/png",
+      "src": "monochrome-icon-512.webp",
+      "type": "image/webp",
       "purpose": "any monochrome",
       "sizes": "512x512"
     },
     {
-      "src": "monochrome-icon-192.png",
-      "type": "image/png",
+      "src": "monochrome-icon-192.webp",
+      "type": "image/webp",
       "purpose": "any monochrome",
       "sizes": "192x192"
     }
   ],
   "screenshots": [
     {
-      "src": "Main Menu.png",
+      "src": "Main Menu.webp",
       "sizes": "1920x1080",
-      "type": "image/png",
+      "type": "image/webp",
       "label": "Main Menu"
     },{
-      "src": "Campaign.png",
+      "src": "Campaign.webp",
       "sizes": "1920x1080",
-      "type": "image/png",
+      "type": "image/webp",
       "label": "Campaign"
     },{
-      "src": "Campaign 2.png",
+      "src": "Campaign 2.webp",
       "sizes": "1920x1080",
-      "type": "image/png",
+      "type": "image/webp",
       "label": "Campaign 2"
     },{
-      "src": "Main Menu.png",
+      "src": "Main Menu.webp",
       "sizes": "1920x1080",
-      "type": "image/png",
+      "type": "image/webp",
       "form_factor": "wide",
       "label": "Main Menu wide"
     },{
-      "src": "Campaign.png",
+      "src": "Campaign.webp",
       "sizes": "1920x1080",
-      "type": "image/png",
+      "type": "image/webp",
       "form_factor": "wide",
       "label": "Campaign wide"
     },{
-      "src": "Campaign 2.png",
+      "src": "Campaign 2.webp",
       "sizes": "1920x1080",
-      "type": "image/png",
+      "type": "image/webp",
       "form_factor": "wide",
       "label": "Campaign 2 wide"
     }
