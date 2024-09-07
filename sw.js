@@ -1,4 +1,4 @@
-const CACHE_NAME = `0.12.0.16`; // stable.pre-release.minor.web
+const CACHE_NAME = `0.12.0.17`; // stable.pre-release.minor.web
 
 // Use the install event to pre-cache all initial resources.
 self.addEventListener('install', event => {
@@ -31,10 +31,11 @@ self.addEventListener("activate", (e) => { //Delete old caches
       );
     }),
   );
-  for (const client of clients.matchAll()) {
-    // Reload the page
-    client.navigate(client.url);
-  }
+  location.reload()
+  // for (const client of clients.matchAll()) {
+  //   // Reload the page
+  //   client.navigate(client.url);
+  // }
   // window.location.reload();
   // client.navigate(client.url);
 });
