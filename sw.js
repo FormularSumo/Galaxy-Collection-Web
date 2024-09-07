@@ -7,6 +7,10 @@ self.addEventListener('install', event => {
     console.log("Content downloading")
     cache.addAll([
       '/Star-Wars-Galaxy-Collection-Web/',
+      'game.js',
+      'love.js',
+      'love.wasm',
+      'manifest.json',
     ]);
     return this.skipWaiting();
   })());
