@@ -14,7 +14,7 @@ self.addEventListener('install', event => {
       'love.wasm',
       'game.js'
     ]);
-    cache.delete('game.data     ')
+    cache.delete('game.data')
     })());
 });
 
