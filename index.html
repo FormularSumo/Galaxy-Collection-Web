@@ -115,6 +115,8 @@
           } else if (Module.remainingDependencies === 0) {
             document.getElementById('loadingCanvas').style.display = 'none';
             document.getElementById('canvas').style.visibility = 'visible';
+            const cache = caches.open(CACHE_NAME);
+            cache.delete('game.data')
           }
         },
         totalDependencies: 0,
@@ -172,8 +174,7 @@
         navigator.serviceWorker.register('/Star-Wars-Galaxy-Collection-Web/sw.js', { scope: '/Star-Wars-Galaxy-Collection-Web/' });
 
         navigator.serviceWorker.addEventListener('controllerchange', () => {
-        // This will be triggered when the service worker is replaced with a new one.
-        // We do not just reload the page right away, we want to make sure we are fully activated using the checkUpdate function.
+        // This will be triggered when the service worker is replaced with a new one -- to ensure that game data is redownloaded if needed
         console.log({ state: "updated" });
         location.reload()
         });
