@@ -1,6 +1,6 @@
-const CACHE_NAME = `0.12.0.       `; // stable.pre-release.minor.web
+const CACHE_NAME = `0.12.0.1`; // stable.pre-release.minor.web
 
-// Use the install event to pre-cache all initial resources.
+// Use the inst     all event to pre-cache all initial resources.
 self.addEventListener('install', event => {
   event.waitUntil((async () => {
     const cache = await caches.open(CACHE_NAME);
