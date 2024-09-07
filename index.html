@@ -115,8 +115,6 @@
           } else if (Module.remainingDependencies === 0) {
             document.getElementById('loadingCanvas').style.display = 'none';
             document.getElementById('canvas').style.visibility = 'visible';
-            const cache = caches.open(CACHE_NAME);
-            cache.delete('game.data')
           }
         },
         totalDependencies: 0,

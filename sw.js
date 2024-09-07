@@ -15,7 +15,6 @@ self.addEventListener('install', event => {
       'love.wasm',
       'game.js'
     ]);
-    cache.delete('game.data')
     })());
 });
 
@@ -37,6 +36,7 @@ self.addEventListener("activate", (e) => { //Delete old caches
 self.addEventListener('fetch', event => {
   event.respondWith((async () => {
     const cache = await caches.open(CACHE_NAME);
+    cache.delete('game.data') //Somehow this gets saved by something, unwanted
 
     // Get the resource from the cache.
     const cachedResponse = await cache.match(event.request);
