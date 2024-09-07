@@ -31,7 +31,7 @@ self.addEventListener("activate", (e) => { //Delete old caches
       );
     }),
   );
-  location.reload()
+  // location.reload()  
   // for (const client of clients.matchAll()) {
   //   // Reload the page
   //   client.navigate(client.url);
