@@ -171,12 +171,12 @@
       if('serviceWorker' in navigator) {
         navigator.serviceWorker.register('/Star-Wars-Galaxy-Collection-Web/sw.js', { scope: '/Star-Wars-Galaxy-Collection-Web/' });
 
-        navigator.serviceWorker.addEventListener('controllerchange', () => {
-        // This will be triggered when the service worker is replaced with a new one.
-        // We do not just reload the page right away, we want to make sure we are fully activated using the checkUpdate function.
-        console.log({ state: "updated" });
-        location.reload()
-    });
+        // navigator.serviceWorker.addEventListener('controllerchange', () => {
+        // // This will be triggered when the service worker is replaced with a new one.
+        // // We do not just reload the page right away, we want to make sure we are fully activated using the checkUpdate function.
+        // console.log({ state: "updated" });
+        // location.reload()
+        // });
       }
     </script>
 
