@@ -4,61 +4,61 @@
   "description":"A remake of the discontinued Star Wars Force Collection game",
   "icons": [
     {
-      "src": "maskable-icon-adaptive.svg",
+      "src": "Icons/maskable-icon-adaptive.svg",
       "type": "image/svg+xml",
       "purpose": "maskable",
       "sizes": "512x512"
     },
     {
-      "src": "maskable-icon-512.webp",
+      "src": "Icons/maskable-icon-512.webp",
       "type": "image/webp",
       "purpose": "maskable",
       "sizes": "512x512"
     },
     {
-      "src": "maskable-icon-192.webp",
+      "src": "Icons/maskable-icon-192.webp",
       "type": "image/webp",
       "purpose": "maskable",
       "sizes": "192x192"
     },
     {
-      "src": "icon-adaptive.svg",
+      "src": "Icons/icon-adaptive.svg",
       "type": "image/svg+xml",
       "purpose": "any",
       "sizes": "512x512"
     },
     {
-      "src": "icon-512.webp",
+      "src": "Icons/icon-512.webp",
       "type": "image/webp",
       "purpose": "any",
       "sizes": "512x512"
     },
     {
-      "src": "icon-192.webp",
+      "src": "Icons/icon-192.webp",
       "type": "image/webp",
       "purpose": "any",
       "sizes": "192x192"
     },
     {
-      "src": "maskable-monochrome-icon-512.webp",
+      "src": "Icons/maskable-monochrome-icon-512.webp",
       "type": "image/webp",
       "purpose": "maskable monochrome",
       "sizes": "512x512"
     },
     {
-      "src": "maskable-monochrome-icon-192.webp",
+      "src": "Icons/maskable-monochrome-icon-192.webp",
       "type": "image/webp",
       "purpose": "maskable monochrome",
       "sizes": "192x192"
     },
     {
-      "src": "monochrome-icon-512.webp",
+      "src": "Icons/monochrome-icon-512.webp",
       "type": "image/webp",
       "purpose": "monochrome",
       "sizes": "512x512"
     },
     {
-      "src": "monochrome-icon-192.webp",
+      "src": "Icons/monochrome-icon-192.webp",
       "type": "image/webp",
       "purpose": "monochrome",
       "sizes": "192x192"
@@ -66,34 +66,34 @@
   ],
   "screenshots": [
     {
-      "src": "Main Menu.webp",
+      "src": "Screenshots/Main Menu.webp",
       "sizes": "1920x1080",
       "type": "image/webp",
       "label": "Main Menu"
     },{
-      "src": "Campaign.webp",
+      "src": "Screenshots/Campaign.webp",
       "sizes": "1920x1080",
       "type": "image/webp",
       "label": "Campaign"
     },{
-      "src": "Campaign 2.webp",
+      "src": "Screenshots/Campaign 2.webp",
       "sizes": "1920x1080",
       "type": "image/webp",
       "label": "Campaign 2"
     },{
-      "src": "Main Menu.webp",
+      "src": "Screenshots/Main Menu.webp",
       "sizes": "1920x1080",
       "type": "image/webp",
       "form_factor": "wide",
       "label": "Main Menu wide"
     },{
-      "src": "Campaign.webp",
+      "src": "Screenshots/Campaign.webp",
       "sizes": "1920x1080",
       "type": "image/webp",
       "form_factor": "wide",
       "label": "Campaign wide"
     },{
-      "src": "Campaign 2.webp",
+      "src": "Screenshots/Campaign 2.webp",
       "sizes": "1920x1080",
       "type": "image/webp",
       "form_factor": "wide",

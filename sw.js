@@ -10,7 +10,7 @@ self.addEventListener('install', event => {
     cache.addAll([
         // '/'
       'index.html',
-      "favicon.ico",
+      "Icons/favicon.ico",
       'love.js',
       'love.wasm',
       'game.js'
