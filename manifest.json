@@ -66,6 +66,21 @@
   ],
   "screenshots": [
     {
+      "src": "Screenshots/Dathomir.webp",
+      "sizes": "1920x1080",
+      "type": "image/webp",
+      "label": "Dathonmir"
+    },{
+      "src": "Screenshots/Deck Editor.webp",
+      "sizes": "1920x1080",
+      "type": "image/webp",
+      "label": "Deck Editor"
+    },{
+      "src": "Screenshots/Mos Eisley.webp",
+      "sizes": "1920x1080",
+      "type": "image/webp",
+      "label": "Mos Eisley"
+    },{
       "src": "Screenshots/Main Menu.webp",
       "sizes": "1920x1080",
       "type": "image/webp",
@@ -86,10 +101,28 @@
       "type": "image/webp",
       "label": "Sandbox"
     },{
-      "src": "Screenshots/Settings.webp",
+    "src": "Screenshots/Settings.webp",
+    "sizes": "1920x1080",
+    "type": "image/webp",
+    "label": "Settings"
+    },{
+      "src": "Screenshots/Dathomir.webp",
       "sizes": "1920x1080",
       "type": "image/webp",
-      "label": "Settings"
+      "form_factor": "wide",
+      "label": "Dathonmir wide"
+    },{
+      "src": "Screenshots/Deck Editor.webp",
+      "sizes": "1920x1080",
+      "type": "image/webp",
+      "form_factor": "wide",
+      "label": "Deck Editor wide"
+    },{
+      "src": "Screenshots/Mos Eisley.webp",
+      "sizes": "1920x1080",
+      "type": "image/webp",
+      "form_factor": "wide",
+      "label": "Mos Eisley wide"
     },{
       "src": "Screenshots/Main Menu.webp",
       "sizes": "1920x1080",
