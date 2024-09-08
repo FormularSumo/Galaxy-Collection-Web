@@ -1,6 +1,7 @@
 {
   "short_name": "Galaxy Collection",
   "name": "Galaxy Collection",
+  "description":"A remake of the discontinued Star Wars Force Collection game",
   "icons": [
     {
       "src": "maskable-icon-adaptive.svg",
