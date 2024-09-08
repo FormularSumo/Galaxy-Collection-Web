@@ -54,13 +54,13 @@
     {
       "src": "monochrome-icon-512.webp",
       "type": "image/webp",
-      "purpose": "any monochrome",
+      "purpose": "monochrome",
       "sizes": "512x512"
     },
     {
       "src": "monochrome-icon-192.webp",
       "type": "image/webp",
-      "purpose": "any monochrome",
+      "purpose": "monochrome",
       "sizes": "192x192"
     }
   ],
