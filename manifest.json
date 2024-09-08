@@ -81,6 +81,16 @@
       "type": "image/webp",
       "label": "Campaign 2"
     },{
+      "src": "Screenshots/Sandbox.webp",
+      "sizes": "1920x1080",
+      "type": "image/webp",
+      "label": "Sandbox"
+    },{
+      "src": "Screenshots/Settings.webp",
+      "sizes": "1920x1080",
+      "type": "image/webp",
+      "label": "Settings"
+    },{
       "src": "Screenshots/Main Menu.webp",
       "sizes": "1920x1080",
       "type": "image/webp",
@@ -98,6 +108,19 @@
       "type": "image/webp",
       "form_factor": "wide",
       "label": "Campaign 2 wide"
+    },{
+      "src": "Screenshots/Sandbox.webp",
+      "sizes": "1920x1080",
+      "type": "image/webp",
+      "form_factor": "wide",
+      "label": "Sandbox wide"
+    },{
+      "src": "Screenshots/Settings.webp",
+      "sizes": "1920x1080",
+      "type": "image/webp",
+      "form_factor": "wide",
+      "label": "Settings wide"
+    },{
     }
   ],
   "background_color" : "black",
