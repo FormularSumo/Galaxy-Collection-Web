@@ -56,9 +56,9 @@
         var canvas = document.getElementById("canvas");
         if(canvas.requestFullScreen)
             canvas.requestFullScreen();
-        else if(canvas.webkitRequestFullScreen)
+        else if(canvas.webkitRequestFullScreen) //Up until Safari 16.4 (2023-03-27), and Chrome 71 (2018-12-04)
             canvas.webkitRequestFullScreen();
-        else if(canvas.mozRequestFullScreen)
+        else if(canvas.mozRequestFullScreen) //Up until Firefox 64 (2018-12-11)
             canvas.mozRequestFullScreen();
       }
       function FullScreenHook(){
