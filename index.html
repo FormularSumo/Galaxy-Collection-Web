@@ -194,7 +194,7 @@
     </footer>
 
     <script>
-      if (!document.getElementById("canvas").requestFullscreen() && !document.getElementById("canvas").webkitRequestFullscreen() && !document.getElementById("canvas").mozRequestFullScreen()) {
+      if (!document.getElementById("canvas").requestFullscreen && !document.getElementById("canvas").webkitRequestFullscreen && !document.getElementById("canvas").mozRequestFullScreen) {
         document.getElementById("fullscreen-toggle").remove(); //Remove fullscreenbutton on iOS where it's not supported..
       }
     </script>
