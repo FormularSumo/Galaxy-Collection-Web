@@ -58,12 +58,12 @@
     <script type='text/javascript'>
       function goFullScreen(){
         var canvas = document.getElementById("canvas");
-        if(canvas.requestFullscreen)
-            canvas.requestFullscreen();
-        else if(canvas.webkitRequestFullscreen) //Up until Safari 16.4 (2023-03-27), and Chrome 71 (2018-12-04)
-            canvas.webkitRequestFullscreen();
-        else if(canvas.mozRequestFullScreen) //Up until Firefox 64 (2018-12-11)
-            canvas.mozRequestFullScreen();
+        if(document.body.requestFullscreen !== 'undefined')
+          canvas.requestFullscreen();
+        else if(document.body.webkitRequestFullscreen !== 'undefined') //Up until Safari 16.4 (2023-03-27), and Chrome 71 (2018-12-04)
+          canvas.webkitRequestFullscreen();
+        else if(document.body.mozRequestFullScreen !== 'undefined') //Up until Firefox 64 (2018-12-11)
+          canvas.mozRequestFullScreen();
       }
       function FullScreenHook(){
         var canvas = document.getElementById("canvas");
