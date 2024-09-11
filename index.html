@@ -58,10 +58,10 @@
     <script type='text/javascript'>
       function goFullScreen(){
         var canvas = document.getElementById("canvas");
-        if(canvas.requestFullScreen)
-            canvas.requestFullScreen();
-        else if(canvas.webkitRequestFullScreen) //Up until Safari 16.4 (2023-03-27), and Chrome 71 (2018-12-04)
-            canvas.webkitRequestFullScreen();
+        if(canvas.requestFullscreen)
+            canvas.requestFullscreen();
+        else if(canvas.webkitRequestFullscreen) //Up until Safari 16.4 (2023-03-27), and Chrome 71 (2018-12-04)
+            canvas.webkitRequestFullscreen();
         else if(canvas.mozRequestFullScreen) //Up until Firefox 64 (2018-12-11)
             canvas.mozRequestFullScreen();
       }
@@ -194,7 +194,7 @@
     </footer>
 
     <script>
-      if (!document.getElementById("canvas").requestFullscreen && !document.getElementById("canvas").webkitRequestFullscreen && !document.getElementById("canvas").mozRequestFullScreen) {
+      if (document.body.requestFullscreen == 'undefined' && document.body.webkitRequestFullscreen == 'undefined' && document.body.mozRequestFullScreen == 'undefined') {
         document.getElementById("fullscreen-toggle").remove(); //Remove fullscreenbutton on iOS where it's not supported..
       }
     </script>
