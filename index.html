@@ -197,6 +197,9 @@
       if (document.body.requestFullscreen == 'undefined' && document.body.webkitRequestFullscreen == 'undefined' && document.body.mozRequestFullScreen == 'undefined') {
         document.getElementById("fullscreen-toggle").remove(); //Remove fullscreenbutton on iOS where it's not supported..
       }
+      console.log(document.body.requestFullscreen);
+      console.log(document.body.webkitRequestFullscreen);
+      console.log(document.body.mozRequestFullScreen);
     </script>
   </body>
 </html>
