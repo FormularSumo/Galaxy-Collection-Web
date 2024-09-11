@@ -165,12 +165,6 @@
     </script> -->
 
     <script>
-      if (navigator.userAgent.indexOf("iPhone") != -1) {
-        document.getElementById("fullscreen toggle").style.display = 'none';
-      } 
-    </script>
-
-    <script>
       if('serviceWorker' in navigator) {
         navigator.serviceWorker.register('/Star-Wars-Galaxy-Collection-Web/sw.js', { scope: '/Star-Wars-Galaxy-Collection-Web/' });
 
@@ -183,19 +177,26 @@
     </script>
 
     <script>
-    if (navigator.storage && navigator.storage.persist) {
-      navigator.storage.persist().then((persistent) => {
-        if (persistent) {
-          console.log("Storage will not be cleared except by explicit user action");
-        } else {
-          console.log("Storage may be cleared by the UA under storage pressure.");
-        }
-      });
-    }
+      if (navigator.storage && navigator.storage.persist) {
+        navigator.storage.persist().then((persistent) => {
+          if (persistent) {
+            console.log("Storage will not be cleared except by explicit user action");
+          } else {
+            console.log("Storage may be cleared by the UA under storage pressure.");
+          }
+        });
+      }
     </script>
 
+
     <footer>
-      <p><button id="fullscreen toggle" onclick="FullScreenHook(); goFullScreen();" >Go Fullscreen</button> </p>
+      <p><button id="fullscreen-toggle" onclick="FullScreenHook(); goFullScreen();" >Go Fullscreen</button> </p>
     </footer>
+
+    <script>
+      if (!document.getElementById("canvas").requestFullscreen() && !document.getElementById("canvas").webkitRequestFullscreen() && !document.getElementById("canvas").mozRequestFullScreen()) {
+        document.getElementById("fullscreen-toggle").remove(); //Remove fullscreenbutton on iOS where it's not supported..
+      }
+    </script>
   </body>
 </html>
