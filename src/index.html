@@ -56,20 +56,6 @@
       <!-- </div> -->
 
       <script type='text/javascript'>
-        function goFullScreen(){
-          var canvas = document.getElementById("canvas");
-          if(document.body.requestFullscreen !== undefined)
-            canvas.requestFullscreen();
-          else if(document.body.webkitRequestFullscreen !== undefined) //Up until Safari 16.4 (2023-03-27), and Chrome 71 (2018-12-04)
-            canvas.webkitRequestFullscreen();
-          else if(document.body.mozRequestFullScreen !== undefined) //Up until Firefox 64 (2018-12-11)
-            canvas.mozRequestFullScreen();
-        }
-        function FullScreenHook(){
-          var canvas = document.getElementById("canvas");
-          canvas.width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-          canvas.height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-        }
         var loadingContext = document.getElementById('loadingCanvas').getContext('2d');
         function drawLoadingText(text) {
           var canvas = loadingContext.canvas;
@@ -143,6 +129,23 @@
       </script>
       <script type="text/javascript" src="game.js"></script>
       <script async type="text/javascript" src="love.js" onload="applicationLoad(this)"></script>
+
+      <script>
+        function goFullScreen(){
+          var canvas = document.getElementById("canvas");
+          if(document.body.requestFullscreen !== undefined)
+            canvas.requestFullscreen();
+          else if(document.body.webkitRequestFullscreen !== undefined) //Up until Safari 16.4 (2023-03-27), and Chrome 71 (2018-12-04)
+            canvas.webkitRequestFullscreen();
+          else if(document.body.mozRequestFullScreen !== undefined) //Up until Firefox 64 (2018-12-11)
+            canvas.mozRequestFullScreen();
+        }
+        function FullScreenHook(){
+          var canvas = document.getElementById("canvas");
+          canvas.width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+          canvas.height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+        }
+      </script>
 
       <!-- <script>
         function resizeCanvas() {
