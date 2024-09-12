@@ -167,10 +167,9 @@
     <script>
       if('serviceWorker' in navigator) {
         navigator.serviceWorker.register('/Star-Wars-Galaxy-Collection-Web/sw.js', { scope: '/Star-Wars-Galaxy-Collection-Web/' });
-
         navigator.serviceWorker.addEventListener('controllerchange', () => {
         // This will be triggered when the service worker is replaced with a new one -- to ensure that game data is redownloaded if needed
-        console.log({ state: "updated" });
+        // console.log({ state: "updated" });
         location.reload()
         });
       }
@@ -179,11 +178,11 @@
     <script>
       if (navigator.storage && navigator.storage.persist) {
         navigator.storage.persist().then((persistent) => {
-          if (persistent) {
-            console.log("Storage will not be cleared except by explicit user action");
-          } else {
-            console.log("Storage may be cleared by the UA under storage pressure.");
-          }
+          // if (persistent) {
+          //   console.log("Storage will not be cleared except by explicit user action");
+          // } else {
+          //   console.log("Storage may be cleared by the UA under storage pressure.");
+          // }
         });
       }
     </script>
@@ -197,9 +196,6 @@
       if (document.body.requestFullscreen == undefined && document.body.webkitRequestFullscreen == undefined && document.body.mozRequestFullScreen == undefined ) {
         document.getElementById("fullscreen-toggle").remove(); //Remove fullscreenbutton on iOS where it's not supported..
       }
-      console.log(document.body.requestFullscreen);
-      console.log(document.body.webkitRequestFullscreen);
-      console.log(document.body.mozRequestFullScreen);
     </script>
   </body>
 </html>
