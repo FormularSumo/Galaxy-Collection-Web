@@ -1,4 +1,4 @@
-const CACHE_NAME = `0.12.0.5`; // stable.pre-release.minor.web
+const CACHE_NAME = `0.12.0.6`; // stable.pre-release.minor.web
 
 // Use the install event to pre-cache all initial resources.
 self.addEventListener('install', event => {
@@ -8,12 +8,12 @@ self.addEventListener('install', event => {
     const cache = await caches.open(CACHE_NAME);
     // console.log("Content downloading")
     cache.addAll([
-        // '/'
       'index.html',
       "Icons/favicon.ico",
       'love.js',
       'love.wasm',
-      'game.js'
+      'game.js',
+      'game.data'
     ]);
     })());
 });
@@ -36,7 +36,6 @@ self.addEventListener("activate", (e) => { //Delete old caches
 self.addEventListener('fetch', event => {
   event.respondWith((async () => {
     const cache = await caches.open(CACHE_NAME);
-    cache.delete('game.data') //Somehow this gets saved by something, unwanted
 
     // Get the resource from the cache.
     const cachedResponse = await cache.match(event.request);

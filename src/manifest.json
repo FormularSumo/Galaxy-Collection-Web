@@ -101,10 +101,10 @@
       "type": "image/webp",
       "label": "Sandbox"
     },{
-    "src": "Screenshots/Settings.webp",
-    "sizes": "1920x1080",
-    "type": "image/webp",
-    "label": "Settings"
+      "src": "Screenshots/Settings.webp",
+      "sizes": "1920x1080",
+      "type": "image/webp",
+      "label": "Settings"
     },{
       "src": "Screenshots/Dathomir.webp",
       "sizes": "1920x1080",
