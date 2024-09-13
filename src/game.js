@@ -33,7 +33,7 @@ Module.expectedDataFileDownloads++;
         var size = packageSize;
         console.log("onprogress")
         if (event.total) size = event.total;
-        if (event.loaded) {
+        // if (event.loaded) {
           console.log("eventloaded")
           if (!xhr.addedTotal) {
             xhr.addedTotal = true;
@@ -56,9 +56,9 @@ Module.expectedDataFileDownloads++;
           }
           total = Math.ceil(total * Module.expectedDataFileDownloads/num);
           if (Module['setStatus']) Module['setStatus']('Downloading data... (' + loaded + '/' + total + ')');
-        } else if (!Module.dataFileDownloads) {
-          if (Module['setStatus']) Module['setStatus']('Downloading data...');
-        }
+        // } else if (!Module.dataFileDownloads) {
+          // if (Module['setStatus']) Module['setStatus']('Downloading data...');
+        // }  
       };
       xhr.onerror = function(event) {
         throw new Error("NetworkError for: " + packageName);
