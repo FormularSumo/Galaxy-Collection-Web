@@ -19,6 +19,7 @@ self.addEventListener('install', event => {
 });
 
 self.addEventListener("activate", (e) => { //Delete old caches
+  indexedDB.deleteDatabase("EM_PRELOAD_CACHE")
   e.waitUntil(
     caches.keys().then((keyList) => {
       return Promise.all(
