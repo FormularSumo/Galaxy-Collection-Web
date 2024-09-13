@@ -31,7 +31,6 @@ Module.expectedDataFileDownloads++;
       xhr.onprogress = function(event) {
         var url = packageName;
         var size = packageSize;
-        console.log(event)
         if (event.total) size = event.total;
         if (event.loaded) {
           if (!xhr.addedTotal) {
