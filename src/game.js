@@ -31,10 +31,9 @@ Module.expectedDataFileDownloads++;
       xhr.onprogress = function(event) {
         var url = packageName;
         var size = packageSize;
-        console.log("onprogress")
+        console.log(event)
         if (event.total) size = event.total;
-        // if (event.loaded) {
-          console.log("eventloaded")
+        if (event.loaded) {
           if (!xhr.addedTotal) {
             xhr.addedTotal = true;
             if (!Module.dataFileDownloads) Module.dataFileDownloads = {};
@@ -56,9 +55,9 @@ Module.expectedDataFileDownloads++;
           }
           total = Math.ceil(total * Module.expectedDataFileDownloads/num);
           if (Module['setStatus']) Module['setStatus']('Downloading data... (' + loaded + '/' + total + ')');
-        // } else if (!Module.dataFileDownloads) {
-          // if (Module['setStatus']) Module['setStatus']('Downloading data...');
-        // }  
+        } else if (!Module.dataFileDownloads) {
+          if (Module['setStatus']) Module['setStatus']('Downloading data...');
+        }  
       };
       xhr.onerror = function(event) {
         throw new Error("NetworkError for: " + packageName);
