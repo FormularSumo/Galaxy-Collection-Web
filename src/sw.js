@@ -1,4 +1,4 @@
-const CACHE_NAME = `0.12.0.12`; // stable.pre-release.minor.web
+const CACHE_NAME = `0.12.0.13 `; // stable.pre-release.minor.web
 
 // Use the install event to pre-cache all initial resources.
 self.addEventListener('install', event => {
