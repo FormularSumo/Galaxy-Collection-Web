@@ -52,9 +52,7 @@
     </head>
     <body>
       <canvas id="loadingCanvas" style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; display: block;" oncontextmenu="event.preventDefault()"></canvas>
-      <!-- <div id="game"> -->
       <canvas id="canvas" style="visibility: hidden; position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; display: block;" oncontextmenu="event.preventDefault()"></canvas>
-      <!-- </div> -->
 
       <script type='text/javascript'>
         var loadingContext = document.getElementById('loadingCanvas').getContext('2d');
@@ -148,32 +146,12 @@
         }
       </script>
 
-      <!-- <script>
-        function resizeCanvas() {
-          const canvas = document.getElementById('canvas');
-          const loadingCanvas = document.getElementById('loadingCanvas');
-          const width = canvas.clientWidth;
-          const height = canvas.clientHeight;
-
-          if (canvas.width !== width || canvas.height !== height) {
-              canvas.width = width;
-              canvas.height = height;
-          }
-          if (loadingCanvas.width !== width || loadingCanvas.height !== height) {
-              loadingCanvas.width = width;
-              loadingCanvas.height = height;
-          }
-        }
-        resizeCanvas();
-        window.addEventListener('resize', resizeCanvas);
-      </script> -->
 
       <script>
         if('serviceWorker' in navigator) {
           navigator.serviceWorker.register('/Star-Wars-Galaxy-Collection-Web/sw.js', { scope: '/Star-Wars-Galaxy-Collection-Web/' });
           navigator.serviceWorker.addEventListener('controllerchange', () => {
           // This will be triggered when the service worker is replaced with a new one -- to ensure that game data is redownloaded if needed
-          // console.log({ state: "updated" });
           location.reload()
           });
         }
@@ -182,11 +160,6 @@
       <script>
         if (navigator.storage && navigator.storage.persist) {
           navigator.storage.persist().then((persistent) => {
-            // if (persistent) {
-            //   console.log("Storage will not be cleared except by explicit user action");
-            // } else {
-            //   console.log("Storage may be cleared by the UA under storage pressure.");
-            // }
           });
         }
       </script>
