@@ -143,7 +143,7 @@
 
       <script>
         if('serviceWorker' in navigator) {
-          navigator.serviceWorker.register('/Star-Wars-Galaxy-Collection-Web/sw.js', { scope: '/Star-Wars-Galaxy-Collection-Web/' });
+          navigator.serviceWorker.register('/Galaxy-Collection-Web/sw.js', { scope: '/Galaxy-Collection-Web/' });
           navigator.serviceWorker.addEventListener('controllerchange', () => {
           // This will be triggered when the service worker is replaced with a new one -- to ensure that game data is redownloaded if needed
           location.reload()
