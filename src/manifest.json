@@ -1,7 +1,15 @@
 {
-  "short_name": "Galaxy Collection",
+  "id": "/Galaxy-Collection-Web/index.html",
+  "start_url": "index.html",
   "name": "Galaxy Collection",
   "description":"A remake of the discontinued Star Wars Force Collection game",
+  "display": "fullscreen",
+  "background_color" : "black",
+  "theme_color": "black",
+  "related_applications": [{
+    "platform": "play",
+    "url": "https://play.google.com/store/apps/details?id=com.formularsumo.starwarsforcecollectionremake.embed"
+  }],
   "icons": [
     {
       "src": "Icons/maskable-icon-adaptive.svg",
@@ -153,15 +161,6 @@
       "type": "image/webp",
       "form_factor": "wide",
       "label": "Settings wide"
-    },{
     }
-  ],
-  "background_color" : "black",
-  "theme_color": "black",
-  "start_url": "index.html",
-  "display": "fullscreen",
-  "related_applications": [{
-    "platform": "play",
-    "url": "https://play.google.com/store/apps/details?id=com.formularsumo.starwarsforcecollectionremake.embed"
-  }]
+  ]
 }
