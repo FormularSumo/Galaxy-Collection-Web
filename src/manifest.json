@@ -4,6 +4,7 @@
   "name": "Galaxy Collection",
   "description":"A remake of the discontinued Star Wars Force Collection game",
   "display": "fullscreen",
+  "display_override": ["window-controls-overlay"],
   "background_color" : "black",
   "theme_color": "black",
   "related_applications": [{
